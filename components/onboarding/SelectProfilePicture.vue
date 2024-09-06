@@ -1,7 +1,7 @@
 <script setup lang='ts'>
-    import {useAccountStore} from "~/src/account/AccountStore";
-    import {useToastStore} from "~/src/toast/ToastStore";
-    import {ToastType} from "~/src/toast/ToastType";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
+    import {useToastStore} from "~/src/utils/toast/ToastStore";
+    import {ToastType} from "~/src/utils/toast/ToastType";
 
     const emit = defineEmits(['uploaded']);
     const accountStore = useAccountStore();

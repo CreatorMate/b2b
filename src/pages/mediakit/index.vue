@@ -1,11 +1,11 @@
 <script setup lang='ts'>
-    import {useMediakitState} from "~/src/Modules/mediakit/MediakitState";
+    import {useMediakitState} from "~/src/Modules/mediakit/types/MediakitState";
     import MediaKit from "~/components/mediakit/MediaKit.vue";
     const mediaKitState = useMediakitState();
 </script>
 
 <template>
-    <div class="flex h-full">
+    <div class="flex h-full w-full">
         <div v-if="mediaKitState.mediakit" class="min-w-96 h-full bg-backgroundPrimary p-6">
             <div class="flex justify-between items-center border-b border-opacity-20 pb-6 border-white">
                 <h1 class="text-2xl">robin mons</h1>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="overflow-y-auto px-10">
+        <div class="overflow-y-auto px-10 w-full flex justify-center">
             <MediaKit></MediaKit>
         </div>
     </div>

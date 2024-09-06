@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-    import type {Creator} from "~/src/creators/creators";
+    import type {Creator} from "~/src/utils/creators/creators";
 
     const {creator} = defineProps<{
         creator: Creator,

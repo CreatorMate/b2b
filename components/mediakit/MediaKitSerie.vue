@@ -1,9 +1,9 @@
 <script setup lang='ts'>
 
     import {defineAsyncComponent, onMounted, ref} from "vue";
-    import type {SerieMatchScore} from "~/src/Modules/mediakit/SerieMatchScore";
-    import type {Serie} from "~/src/Modules/mediakit/Serie";
-    import type {Brand} from "~/src/Modules/mediakit/Brand";
+    import type {SerieMatchScore} from "~/src/Modules/mediakit/types/SerieMatchScore";
+    import type {Serie} from "~/src/Modules/mediakit/types/Serie";
+    import type {Brand} from "~/src/Modules/mediakit/types/Brand";
     import MatchScoreComponent from "~/components/mediakit/MatchScoreComponent.vue";
     import MediaKitStatCard from "~/components/mediakit/MediaKitStatCard.vue";
     import MediaKitSerieVideoPicker from "~/components/mediakit/MediaKitSerieVideoPicker.vue";

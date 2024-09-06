@@ -7,5 +7,6 @@ export type Brand = {
     location: string,
     name: string,
     posts: number,
-    profile_pic: string
+    profile_pic: string,
+    tags: string
 }

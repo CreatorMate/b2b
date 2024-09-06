@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-    import type {Brand} from "~/src/Modules/mediakit/Brand";
+    import type {Brand} from "~/src/Modules/mediakit/types/Brand";
     import HeaderStat from "~/components/mediakit/HeaderStat.vue";
 
     const {brand} = defineProps<{

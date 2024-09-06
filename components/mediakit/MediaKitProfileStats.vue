@@ -1,8 +1,8 @@
 <script setup lang='ts'>
-    import type {MediaKitType} from "~/src/Modules/mediakit/MediaKitType";
+    import type {MediaKitType} from "~/src/Modules/mediakit/types/MediaKitType";
     import MediaKitStatCard from "~/components/mediakit/MediaKitStatCard.vue";
     import MediaKitGraphCard from "~/components/mediakit/MediaKitGraphCard.vue";
-    import {useMediakitState} from "~/src/Modules/mediakit/MediakitState";
+    import {useMediakitState} from "~/src/Modules/mediakit/types/MediakitState";
 
     const {mediakit} = defineProps<{
         mediakit: MediaKitType

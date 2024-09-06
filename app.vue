@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-    import './assets/css/tailwind.css'
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import '~/src/assets/css/tailwind.css'
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import {onMounted} from "vue";
     const supabase = useSupabaseClient();
     const user = useSupabaseUser();

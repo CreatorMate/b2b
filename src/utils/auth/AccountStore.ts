@@ -1,10 +1,10 @@
 //@ts-ignore
 import {defineStore} from "pinia";
-import {useToastStore} from "~/src/toast/ToastStore";
-import {ToastType} from "~/src/toast/ToastType";
-import type {Brand} from "~/src/Modules/mediakit/Brand";
-import {ProfileType} from "~/src/Modules/mediakit/ProfileType";
-import {useLoadingState} from "~/utils/Loading/LoadingState";
+import {useToastStore} from "~/src/utils/toast/ToastStore";
+import {ToastType} from "~/src/utils/toast/ToastType";
+import type {Brand} from "~/src/Modules/mediakit/types/Brand";
+import {ProfileType} from "~/src/Modules/mediakit/types/ProfileType";
+import {useLoadingState} from "~/src/utils/Loading/LoadingState";
 
 export const useAccountStore = defineStore("account", () => {
     const username = ref("");

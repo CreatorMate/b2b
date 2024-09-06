@@ -2,8 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/sitemap', "@nuxtjs/supabase", '@pinia/nuxt', 'nuxt-icon'],
-  plugins: ['~/plugins/click-outside.js'],
-
+  plugins: ['~/src/utils/plugins/click-outside.js'],
+  dir: {
+    layouts: './src/layouts',
+    assets: './src/assets',
+    middleware: './src/middleware',
+    pages: './src/pages',
+    plugins: './src/plugins'
+  },
+  pages: true,
   runtimeConfig: {
     royalution: {
       apiKey: process.env.NUXT_ONBOARDING_API_KEY,
@@ -21,7 +28,7 @@ export default defineNuxtConfig({
     redirectOptions: {
       login: '',
       callback: '/callback',
-      exclude: ['/', '/callback', '(?!.*mediakit).*',]
+      exclude: ['/', '/callback']
     }
   },
 

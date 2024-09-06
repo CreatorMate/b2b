@@ -1,7 +1,7 @@
 <script setup lang='ts'>
     import {onMounted, ref} from "vue";
-    import type {Brand} from "~/src/Modules/mediakit/Brand";
-    import type {MediaKitDBType} from "~/src/Modules/mediakit/MediaKitType";
+    import type {Brand} from "~/src/Modules/mediakit/types/Brand";
+    import type {MediaKitDBType} from "~/src/Modules/mediakit/types/MediaKitType";
     import MatchScoreComponent from "~/components/mediakit/MatchScoreComponent.vue";
     import HeaderStat from "~/components/mediakit/HeaderStat.vue";
 

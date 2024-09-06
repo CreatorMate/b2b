@@ -1,6 +1,6 @@
 <script setup lang='ts'>
     import {onMounted} from "vue";
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import {useRouter} from "#app";
 
     const user = useSupabaseUser();

@@ -1,8 +1,8 @@
 <script setup lang='ts'>
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import {useRouter} from "#app";
-    import {ToastType} from "~/src/toast/ToastType";
-    import {useToastStore} from "~/src/toast/ToastStore";
+    import {ToastType} from "~/src/utils/toast/ToastType";
+    import {useToastStore} from "~/src/utils/toast/ToastStore";
 
     let text = ref("");
     const loading = ref(false);

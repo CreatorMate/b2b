@@ -1,7 +1,7 @@
 <script setup lang='ts'>
     import CreatorMateSlider from "~/components/cm/CreatorMateSlider.vue";
     import CreatorComponent from "~/components/home/Creator.vue";
-    import {creatorsTop, creatorsBottom} from "~/src/creators/creators";
+    import {creatorsTop, creatorsBottom} from "~/src/utils/creators/creators";
 </script>
 
 <template>

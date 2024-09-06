@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-    import {useToastStore} from "~/src/toast/ToastStore";
-    import type {Toast} from "~/src/toast/Toast";
-    import {ToastType} from "~/src/toast/ToastType";
+    import {useToastStore} from "~/src/utils/toast/ToastStore";
+    import type {Toast} from "~/src/utils/toast/Toast";
+    import {ToastType} from "~/src/utils/toast/ToastType";
 
     const toastStore = useToastStore();
     const toasts = toastStore.toasts;

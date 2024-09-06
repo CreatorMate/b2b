@@ -1,7 +1,7 @@
 <script lang="ts" setup>
     import Login from "~/components/home/Login.vue";
     import PrimaryButton from "~/components/common/PrimaryButton.vue";
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import BaseModelVue from "~/components/BaseModelVue.vue";
 
     const router = useRouter();

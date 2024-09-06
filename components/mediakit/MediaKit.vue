@@ -1,11 +1,11 @@
 <script setup lang='ts'>
     import {onMounted, ref} from "vue";
     import {useRoute} from "vue-router";
-    import type {MediaKitDBType, MediaKitType} from "~/src/Modules/mediakit/MediaKitType";
-    import type {Brand} from "~/src/Modules/mediakit/Brand";
-    import {useLoadingState} from "~/utils/Loading/LoadingState";
-    import {useMediakitState} from "~/src/Modules/mediakit/MediakitState";
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import type {MediaKitDBType, MediaKitType} from "~/src/Modules/mediakit/types/MediaKitType";
+    import type {Brand} from "~/src/Modules/mediakit/types/Brand";
+    import {useLoadingState} from "~/src/utils/Loading/LoadingState";
+    import {useMediakitState} from "~/src/Modules/mediakit/types/MediakitState";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import MediaKitSeriesList from "~/components/mediakit/MediaKitSeriesList.vue";
     import MediaKitProfileStats from "~/components/mediakit/MediaKitProfileStats.vue";
     import MediaKitHeader from "~/components/mediakit/MediaKitHeader.vue";
@@ -119,17 +119,16 @@
 
 <template>
     <no-media-kit v-if="!loading && !mediakit"></no-media-kit>
-    <section v-if="mediakit && !loading" class="h-full w-auto ">
+    <section v-if="mediakit && !loading" class="h-full w-full ">
         <div class="w-full flex flex-col mb-16 p-10">
             <div class="">
                 <MediaKitHeader :mediakit></MediaKitHeader>
                 <MediaKitProfileStats :mediakit/>
             </div>
         </div>
-        <div v-show="!mediaKitState.hideSeries">
+        <div class="transition duration-200" v-show="!mediaKitState.hideSeries">
             <MediaKitSeriesList :brand :mediakit/>
         </div>
-
         <div class="h-10 bg-black w-14"></div>
     </section>
 </template>

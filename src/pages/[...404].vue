@@ -2,7 +2,7 @@
     import {useRouter} from "#app";
 
     const router = useRouter()
-    await router.replace('/')
+    await router.replace('/discover')
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 //@ts-ignore
 import {defineStore} from "pinia";
-import type {MediaKitDBType, MediaKitType} from "~/src/Modules/mediakit/MediaKitType";
-import type {MediakitSettings} from "~/src/Modules/mediakit/MediakitSettings";
+import type {MediaKitDBType, MediaKitType} from "~/src/Modules/mediakit/types/MediaKitType";
+import type {MediakitSettings} from "~/src/Modules/mediakit/types/MediakitSettings";
 
 export const useMediakitState = defineStore("mediakit", () => {
     const supabase = useSupabaseClient();

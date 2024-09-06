@@ -1,6 +1,6 @@
 <script setup lang='ts'>
     import Sidebar from "~/components/Sidebar.vue";
-    import {useLoadingState} from "~/utils/Loading/LoadingState";
+    import {useLoadingState} from "~/src/utils/Loading/LoadingState";
     const loadingState = useLoadingState();
 </script>
 

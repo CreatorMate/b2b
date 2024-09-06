@@ -1,10 +1,10 @@
 <script setup lang='ts'>
     import {useRoute} from "vue-router";
     import {onMounted, ref} from "vue";
-    import type {MediaKitType} from "~/src/Modules/mediakit/MediaKitType";
-    import type {Brand} from "~/src/Modules/mediakit/Brand";
-    import {useAccountStore} from "~/src/account/AccountStore";
-    import type {Serie} from "~/src/Modules/mediakit/Serie";
+    import type {MediaKitType} from "~/src/Modules/mediakit/types/MediaKitType";
+    import type {Brand} from "~/src/Modules/mediakit/types/Brand";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
+    import type {Serie} from "~/src/Modules/mediakit/types/Serie";
     import MediaKitSerie from "~/components/mediakit/MediaKitSerie.vue";
 
     const supabase = useSupabaseClient();

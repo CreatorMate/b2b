@@ -1,7 +1,7 @@
 //@ts-ignore
 import {defineStore} from "pinia";
-import type {Toast} from "~/src/toast/Toast";
-import type {ToastType} from "~/src/toast/ToastType";
+import type {Toast} from "~/src/utils/toast/Toast";
+import type {ToastType} from "~/src/utils/toast/ToastType";
 export const useToastStore = defineStore("toastStore", () => {
     const toasts = ref(new Map<number, Toast>);
     let id = 0;

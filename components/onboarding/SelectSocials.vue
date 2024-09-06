@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-    import {useAccountStore} from "~/src/account/AccountStore";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
 
     const accountStore = useAccountStore();
     const {onOnboarding} = defineProps<{

@@ -1,6 +1,6 @@
 <script setup lang='ts'>
     import {onMounted, ref} from "vue";
-    import type {Serie, SerieContent} from "~/src/Modules/mediakit/Serie";
+    import type {Serie, SerieContent} from "~/src/Modules/mediakit/types/Serie";
     import ArrowDownIcon from "~/components/Icons/ArrowDownIcon.vue";
     import HeartIcon from "~/components/Icons/HeartIcon.vue";
     import CommentIcon from "~/components/Icons/CommentIcon.vue";

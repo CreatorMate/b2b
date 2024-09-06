@@ -1,8 +1,8 @@
 <script setup lang='ts'>
-    import {useAccountStore} from "~/src/account/AccountStore";
-    import type {MediaKitType} from "~/src/Modules/mediakit/MediaKitType";
+    import {useAccountStore} from "~/src/utils/auth/AccountStore";
+    import type {MediaKitType} from "~/src/Modules/mediakit/types/MediaKitType";
     import HeaderStat from "~/components/mediakit/HeaderStat.vue";
-    import {useMediakitState} from "~/src/Modules/mediakit/MediakitState";
+    import {useMediakitState} from "~/src/Modules/mediakit/types/MediakitState";
 
     const account = useAccountStore();
     const mediaKitState = useMediakitState();

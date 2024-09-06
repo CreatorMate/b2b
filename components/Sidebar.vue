@@ -11,11 +11,11 @@ import NavItem from "~/components/NavItem.vue";
                 <p class=" px-2 bg-white text-black">beta</p>
             </div>
         </div>
-        <NavItem name="Discover" to="home" icon="fa6-solid:paper-plane"></NavItem>
-        <NavItem name="Dealflow" to="dealflow" icon="mdi:animation-outline"></NavItem>
+        <NavItem name="Discover" to="discover" icon="fa6-solid:paper-plane"></NavItem>
+        <NavItem name="Posts" to="dealflow" icon="mdi:animation-outline"></NavItem>
         <NavItem name="Templates" to="templates" icon="mdi:archive-plus"></NavItem>
-        <NavItem name="Invoicing" to="invoicing" icon="iconamoon:invoice-thin"></NavItem>
-        <NavItem name="Rate Calculator" to="rate" icon="carbon:ai-generate"></NavItem>
+        <NavItem name="Partnerships" to="invoicing" icon="iconamoon:invoice-thin"></NavItem>
+        <NavItem name="open deals" to="rate" icon="carbon:ai-generate"></NavItem>
         <NavItem name="Media kit" to="mediakit" icon="ph:user-bold"></NavItem>
         <div class="mt-auto">
             <div class="border-b border-white border-opacity-20">

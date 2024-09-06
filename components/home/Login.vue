@@ -1,8 +1,8 @@
 <script setup lang='ts'>
     import {onMounted} from "vue";
     import {useRouter} from "#app";
-    import {useToastStore} from "~/src/toast/ToastStore";
-    import {ToastType} from "~/src/toast/ToastType";
+    import {useToastStore} from "~/src/utils/toast/ToastStore";
+    import {ToastType} from "~/src/utils/toast/ToastType";
     import SecondaryButton from "~/components/common/SecondaryButton.vue";
 
     const supabase = useSupabaseClient();

@@ -1,4 +1,4 @@
-import type {ToastType} from "~/src/toast/ToastType";
+import type {ToastType} from "~/src/utils/toast/ToastType";
 
 export type Toast = {
     id: number,
