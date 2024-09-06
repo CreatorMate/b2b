@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="overflow-y-auto px-10 w-full flex justify-center">
+        <div class="overflow-y-auto px-2 laptop:px-10 w-full flex justify-center">
             <MediaKit></MediaKit>
         </div>
     </div>

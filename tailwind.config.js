@@ -20,6 +20,9 @@ module.exports = {
         'text-green-500',
     ],
     theme: {
+        screens: {
+            'laptop': '1750px'
+        },
         //alle custom tailwind generated classes voor de thema's
         extend: {
             flex: {

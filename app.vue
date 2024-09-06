@@ -2,6 +2,7 @@
     import '~/src/assets/css/tailwind.css'
     import {useAccountStore} from "~/src/utils/auth/AccountStore";
     import {onMounted} from "vue";
+    import ToastModel from "~/src/utils/toast/ToastModel.vue";
     const supabase = useSupabaseClient();
     const user = useSupabaseUser();
     const accountStore = useAccountStore();
@@ -22,7 +23,7 @@
 </script>
 
 <template>
-    <main class="screen-size bg-black text-white flex flex-col lowercase">
+    <main class="screen-size bg-black text-white flex flex-col lowercase overflow-x-hidden">
         <ToastModel></ToastModel>
         <NuxtLayout>
             <NuxtPage></NuxtPage>

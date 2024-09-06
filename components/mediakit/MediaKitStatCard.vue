@@ -26,7 +26,7 @@
 </script>
 
 <template>
-    <div @mouseenter="emitStart" @mouseleave="emitEnd" class="bg-card p-4 rounded-2xl h-[124px] flex flex-col justify-between tooltip relative border border-[#2E2E2E] transition duration-100">
+    <div @mouseenter="emitStart" @mouseleave="emitEnd" class="bg-card p-4 rounded-2xl h-[124px] flex flex-col justify-between tooltip relative border border-[#2E2E2E] transition duration-100 overflow-x-hidden">
         <p class="text-mediakitGray text-sm">{{description}}</p>
         <div class="flex justify-between items-center">
             <p class="text-2xl font-medium">{{value}}{{descriptor}}</p>

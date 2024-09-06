@@ -32,7 +32,7 @@
 </script>
 
 <template>
-    <div class="bg-card p-4 rounded-2xl border border-[#2E2E2E]">
+    <div class="bg-card p-4 rounded-2xl border border-[#2E2E2E] overflow-x-hidden">
         <p class="text-white text-opacity-60 text-sm pb-3">{{ description }}</p>
         <div class="overflow-x-auto">
             <table class="table-auto w-full">

@@ -120,7 +120,7 @@
 <template>
     <no-media-kit v-if="!loading && !mediakit"></no-media-kit>
     <section v-if="mediakit && !loading" class="h-full w-full ">
-        <div class="w-full flex flex-col mb-16 p-10">
+        <div class="w-full flex flex-col mb-16 py-10 px-4 laptop:px-10">
             <div class="">
                 <MediaKitHeader :mediakit></MediaKitHeader>
                 <MediaKitProfileStats :mediakit/>
