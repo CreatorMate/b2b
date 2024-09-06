@@ -21,6 +21,18 @@ module.exports = {
     ],
     theme: {
         screens: {
+
+            'xxs': '400px',
+            'xs': '500px',
+            'sm': '600px',
+            'md': '765px',
+            'lg': '925px',
+            'xl': '1150px',
+            '2xl': '1300px',
+            'xxl': '1650px',
+            '4xl': '1950px',
+            '5xl': '2500px',
+            '6xl': '3300px',
             'laptop': '1750px'
         },
         //alle custom tailwind generated classes voor de thema's
